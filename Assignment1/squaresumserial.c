@@ -15,6 +15,6 @@ void main()
     }
     t = clock()-t;
     double time_taken = ((double)t)/CLOCKS_PER_SEC;
-    printf("\n Time taken is %f\n",time_taken);
+    printf("\nTime taken is %f\n",time_taken);
     printf("Sum : %lld\n",sum);
 }
