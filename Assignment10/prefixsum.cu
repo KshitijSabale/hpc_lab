@@ -91,7 +91,7 @@ void checkRes(float *arr, float *res, int N, float *ptemp, float* ttemp)
  
 int main()
 {
-  const int N = 1000000;
+  const int N = 1000;
   size_t size = N * sizeof(float);
  
   float *arr;
@@ -104,7 +104,7 @@ int main()
   initWith(0, res, N);
  
   int blocks = 1;
-  int threadsPerBlock = 32;
+  int threadsPerBlock = 64;
   int totalThreads = blocks * threadsPerBlock;
  
   float *ptemp;
